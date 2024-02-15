@@ -4,7 +4,7 @@ const TableRow = ({ title, content }) => (
   <div
     className={`
      px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 
-     odd:bg-gray-100 dark:odd:bg-gray-800 
+     odd:bg-gray-100 dark:odd:bg-gray-800
      even:bg-white dark:even:bg-gray-900
      `}
   >
@@ -56,7 +56,6 @@ export const CityDetails = ({ city, models }) => (
       ["中文名", city.name],
       ["拉丁名", city["name-latin"]],
       ["区号", city["city-code"]],
-      // ["简称", `${city["zh-abbreviation"]} / ${city.id.toUpperCase()}`],
       [
         "类别",
         models[0].regions
@@ -67,21 +66,10 @@ export const CityDetails = ({ city, models }) => (
       ["所属二级区划", city.county],
       ["包含四级区划", city.neighborhoods],
     ]
-      // filter out empty content
-      .filter((item) => item[1])
+      // filter out empty content. if needed, uncomment the line below
+      // .filter((item) => item[1])
       .map((item, index) => (
         <TableRow key={index} title={item[0]} content={item[1]} />
       ))}
   </div>
 );
-// models[0].regions.find((r) => r.id === city.type).names.length > 1
-//           ? models[0].regions
-//               .find((r) => r.id === city.type)
-//               .names.reduce(
-//                 (a, b) =>
-//                   a.zh + " (" + a.en + ")" + " / " + b.zh + " (" + b.en + ")"
-//               )
-//           : models[0].regions.find((r) => r.id === city.type).names[0].zh +
-//             " (" +
-//             models[0].regions.find((r) => r.id === city.type).names[0].en +
-//             ")"
