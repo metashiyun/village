@@ -1,0 +1,746 @@
+{
+  "name": "Shiyun Works Regions Database",
+  "name-zh": "红石云工场区划数据库",
+  "version": "1.0.0",
+  "models": [
+    {
+      "id": "2024",
+      "name": "Shiyun Works Region Model 2024",
+      "version": "1.0.0",
+      "regions": [
+        {
+          "id": "state",
+          "type": "private",
+          "level": 1,
+          "names": [
+            {
+              "en": "Region",
+              "zh": "玩家村落"
+            }
+          ],
+          "governor": {
+            "en": "Governor",
+            "zh": "代表人"
+          }
+        },
+        {
+          "id": "pref",
+          "type": "public",
+          "level": 1,
+          "names": [
+            {
+              "en": "Prefecture",
+              "zh": "府"
+            },
+            {
+              "en": "Metropolis",
+              "zh": "府"
+            }
+          ],
+          "govt": {
+            "en": "Government",
+            "zh": "厅"
+          },
+          "governor": {
+            "en": "Governor",
+            "zh": "知事"
+          }
+        },
+        {
+          "id": "territory",
+          "type": "public",
+          "level": 1,
+          "names": [
+            {
+              "en": "Territory",
+              "zh": "地区"
+            }
+          ],
+          "govt": {
+            "en": "Government",
+            "zh": "总督府"
+          },
+          "governor": {
+            "en": "Governor",
+            "zh": "总督"
+          }
+        },
+        {
+          "id": "county",
+          "type": "public",
+          "level": 2,
+          "names": [
+            {
+              "en": "County",
+              "zh": "县"
+            },
+            {
+              "en": "County",
+              "zh": "郡"
+            }
+          ]
+        },
+        {
+          "id": "city-metro",
+          "type": "public",
+          "level": 3,
+          "names": [
+            {
+              "en": "City",
+              "zh": "特别区"
+            }
+          ],
+          "govt": {
+            "en": "Hall",
+            "zh": "公所"
+          },
+          "governor": {
+            "en": "Mayor",
+            "zh": "区长"
+          }
+        },
+        {
+          "id": "city",
+          "type": "public",
+          "level": 3,
+          "names": [
+            {
+              "en": "City",
+              "zh": "普通市"
+            }
+          ],
+          "govt": {
+            "en": "Hall",
+            "zh": "政厅"
+          },
+          "governor": {
+            "en": "Mayor",
+            "zh": "市长"
+          }
+        },
+        {
+          "id": "city-special",
+          "type": "public",
+          "level": 3,
+          "names": [
+            {
+              "en": "City",
+              "zh": "特别市"
+            }
+          ],
+          "govt": {
+            "en": "Hall",
+            "zh": "政厅"
+          },
+          "governor": {
+            "en": "Mayor",
+            "zh": "市长"
+          }
+        },
+        {
+          "id": "town",
+          "type": "public",
+          "level": 3,
+          "names": [
+            {
+              "en": "Town",
+              "zh": "镇"
+            }
+          ],
+          "govt": {
+            "en": "Hall",
+            "zh": "公所"
+          },
+          "governor": {
+            "en": "Mayor",
+            "zh": "镇长"
+          }
+        },
+        {
+          "id": "village",
+          "type": "public",
+          "level": 3,
+          "names": [
+            {
+              "en": "Village",
+              "zh": "村"
+            }
+          ],
+          "govt": {
+            "en": "Hall",
+            "zh": "公所"
+          },
+          "governor": {
+            "en": "Head",
+            "zh": "村长"
+          }
+        },
+        {
+          "id": "neighborhood",
+          "type": "public",
+          "level": 4,
+          "names": [
+            {
+              "en": "Neighborhood",
+              "zh": "街区"
+            },
+            {
+              "en": "District",
+              "zh": "区"
+            },
+            {
+              "en": "Neighborhood",
+              "zh": "里"
+            },
+            {
+              "en": "Neighborhood",
+              "zh": "邻"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "dj",
+      "level": 1,
+      "model": "2024",
+      "region-code": "02",
+      "zh-abbreviation": "东",
+      "name": "东京府",
+      "name-latin": "Dongjing Metropolis",
+      "type": "pref",
+      "capital": "西溪区 Seikei",
+      "est": "2016",
+      "governor": "scchan",
+      "vice-governor": "Kawakazechan",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "wz",
+      "level": 1,
+      "model": "2024",
+      "region-code": "03",
+      "zh-abbreviation": "婺",
+      "name": "婺州府",
+      "name-latin": "Wuzhou Metropolis",
+      "type": "pref",
+      "capital": "北村区 Beicun",
+      "est": "2018",
+      "governor": "syx0310",
+      "vice-governor": "lyq2002",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "hb",
+      "level": 1,
+      "model": "2024",
+      "region-code": "10",
+      "zh-abbreviation": "滨",
+      "name": "湖滨府",
+      "name-latin": "Hubin Prefecture",
+      "type": "pref",
+      "capital": "湖滨市 Hubin",
+      "est": "2016",
+      "governor": "syx0310",
+      "vice-governor": "Kawakazechan",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "tc",
+      "level": 1,
+      "model": "2024",
+      "region-code": "11",
+      "zh-abbreviation": "塔",
+      "name": "塔城府",
+      "name-latin": "Tacheng Prefecture",
+      "type": "pref",
+      "capital": "西山区 Xishan",
+      "est": "2015",
+      "governor": "lyq2002",
+      "vice-governor": "scchan",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "jd",
+      "level": 1,
+      "model": "2024",
+      "region-code": "12",
+      "zh-abbreviation": "京",
+      "name": "京都府",
+      "name-latin": "Jingdu Prefecture",
+      "type": "pref",
+      "capital": "京都市 Jingdu",
+      "est": "2015",
+      "governor": "scchan",
+      "vice-governor": "small___rice",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "ys",
+      "level": 1,
+      "model": "2024",
+      "region-code": "20",
+      "zh-abbreviation": "逸",
+      "name": "逸仙府",
+      "name-latin": "Sun Yat-sen Prefecture",
+      "type": "pref",
+      "capital": "东逸仙市 Tung Yat-sen",
+      "est": "2017",
+      "governor": "small___rice",
+      "vice-governor": "scchan",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "tk",
+      "level": 1,
+      "model": "2024",
+      "region-code": "22",
+      "zh-abbreviation": "海",
+      "name": "东海府",
+      "name-latin": "Dong-Hai Prefecture",
+      "type": "pref",
+      "capital": "海湾市 Haiwan",
+      "est": "2017",
+      "governor": "syx0310",
+      "vice-governor": "scchan",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "kr",
+      "level": 1,
+      "model": "2024",
+      "region-code": "23",
+      "zh-abbreviation": "北",
+      "name": "北岛府",
+      "name-latin": "Beidao Prefecture",
+      "type": "pref",
+      "capital": "北斗市 Beidou",
+      "est": "2018",
+      "governor": "scchan",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "fo",
+      "level": 1,
+      "model": "2024",
+      "region-code": "26",
+      "zh-abbreviation": "佛",
+      "name": "佛州府",
+      "name-latin": "Fozhou Prefecture",
+      "type": "pref",
+      "capital": "新山市 Niiyama",
+      "est": "2018",
+      "governor": "syx0310",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "se",
+      "level": 1,
+      "model": "2024",
+      "region-code": "27",
+      "zh-abbreviation": "千",
+      "name": "千代府",
+      "name-latin": "Sendai Prefecture",
+      "type": "pref",
+      "capital": "千代市 Sendai",
+      "est": "2017",
+      "governor": "scchan",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "pj",
+      "level": 1,
+      "model": "2024",
+      "region-code": "28",
+      "zh-abbreviation": "平",
+      "name": "平江府",
+      "name-latin": "Pingjiang Prefecture",
+      "type": "pref",
+      "capital": "平江市 Pingjiang",
+      "est": "2019",
+      "governor": "东京府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "zy",
+      "level": 1,
+      "model": "2024",
+      "region-code": "29",
+      "zh-abbreviation": "知",
+      "name": "知音湖府",
+      "name-latin": "Zhiyinhu Prefecture",
+      "type": "pref",
+      "capital": "知音湖市 Zhiyinhu",
+      "est": "2020",
+      "governor": "京都府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "sz",
+      "level": 1,
+      "model": "2024",
+      "region-code": "30",
+      "zh-abbreviation": "松",
+      "name": "松山府",
+      "name-latin": "Songshan Prefecture",
+      "type": "pref",
+      "capital": "松山市 Songshan",
+      "est": "2021",
+      "governor": "scchan",
+      "vice-governor": "xi_lao_zhai",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "rk",
+      "level": 1,
+      "model": "2024",
+      "region-code": "31",
+      "zh-abbreviation": "临",
+      "name": "临海府",
+      "name-latin": "Rinkai Prefecture",
+      "type": "pref",
+      "capital": "临海市 Linhai",
+      "est": "2021",
+      "governor": "东京府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "ro",
+      "level": 1,
+      "model": "2024",
+      "region-code": "32",
+      "zh-abbreviation": "罗",
+      "name": "全罗府",
+      "name-latin": "Jeolla Prefecture",
+      "type": "pref",
+      "capital": "罗家汇市 Rokawei",
+      "est": "2021",
+      "governor": "scchan",
+      "vice-governor": "Kawakazechan",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "sa",
+      "level": 1,
+      "model": "2024",
+      "region-code": "33",
+      "zh-abbreviation": "坂",
+      "name": "坂井府",
+      "name-latin": "Sakai Prefecture",
+      "type": "pref",
+      "capital": "坂井市 Sakai",
+      "est": "2021",
+      "governor": "scchan",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "yz",
+      "level": 1,
+      "model": "2024",
+      "region-code": "34",
+      "zh-abbreviation": "严",
+      "name": "严州府",
+      "name-latin": "Yanzhou Prefecture",
+      "type": "pref",
+      "capital": "建德市 Jiande",
+      "est": "2021",
+      "governor": "Kawakazechan",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "iz",
+      "level": 1,
+      "model": "2024",
+      "region-code": "35",
+      "zh-abbreviation": "瀛",
+      "name": "瀛洲府",
+      "name-latin": "Yingzhou Prefecture",
+      "type": "pref",
+      "capital": "瀛洲市 Yingzhou",
+      "est": "2022",
+      "governor": "AlccHoward",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "sk",
+      "level": 1,
+      "model": "2024",
+      "region-code": "36",
+      "zh-abbreviation": "南",
+      "name": "南雪平府",
+      "name-latin": "Söderköping Prefecture",
+      "type": "pref",
+      "capital": "南雪平市 Söderköping",
+      "est": "2022",
+      "governor": "东京府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "sp",
+      "level": 1,
+      "model": "2024",
+      "region-code": "37",
+      "zh-abbreviation": "雪",
+      "name": "雪峰府",
+      "name-latin": "Snow Peak Prefecture",
+      "type": "pref",
+      "capital": "雪峰市 Snow Peak",
+      "est": "2022",
+      "governor": "东京府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "is",
+      "level": 1,
+      "model": "2024",
+      "region-code": "38",
+      "zh-abbreviation": "岩",
+      "name": "岩岛府",
+      "name-latin": "Yandao Prefecture",
+      "type": "pref",
+      "capital": "岩岛市 Yandao",
+      "est": "2022",
+      "governor": "千代府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "ns",
+      "level": 1,
+      "model": "2024",
+      "region-code": "39",
+      "zh-abbreviation": "沙",
+      "name": "南沙地区",
+      "name-latin": "Nansha Territory",
+      "type": "territory",
+      "capital": "南沙村 Nansha",
+      "est": "2022",
+      "governor": "xi_lao_zhai",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "tj",
+      "level": 1,
+      "model": "2024",
+      "region-code": "40",
+      "zh-abbreviation": "天",
+      "name": "天京府",
+      "name-latin": "Tianjing Prefecture",
+      "type": "pref",
+      "capital": "天京市 Tianjing",
+      "est": "2022",
+      "governor": "baka_mashiro",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "au",
+      "level": 1,
+      "model": "2024",
+      "region-code": "41",
+      "zh-abbreviation": "澳",
+      "name": "澳斯托拉利亚地区",
+      "name-latin": "Australia Territory",
+      "type": "territory",
+      "capital": "悉尼市 Sydney",
+      "est": "2023",
+      "governor": "东海府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "nv",
+      "level": 1,
+      "model": "2024",
+      "region-code": "42",
+      "zh-abbreviation": "内",
+      "name": "新内华达地区",
+      "name-latin": "New Nevada Territory",
+      "type": "territory",
+      "capital": "拉斯维加斯市 Las Vegas",
+      "est": "2023",
+      "governor": "全罗府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "hc",
+      "level": 1,
+      "model": "2024",
+      "region-code": "43",
+      "zh-abbreviation": "竹",
+      "name": "新竹府",
+      "name-latin": "Hsin-chu Prefecture",
+      "type": "pref",
+      "capital": "新竹市 Hsin-chu",
+      "est": "2023",
+      "governor": "松山府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "tm",
+      "level": 1,
+      "model": "2024",
+      "region-code": "44",
+      "zh-abbreviation": "天",
+      "name": "天门地区",
+      "name-latin": "Tianmen Territory",
+      "type": "territory",
+      "capital": "天门市 Tianmen",
+      "est": "2023",
+      "governor": "松山府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "wn",
+      "level": 1,
+      "model": "2024",
+      "region-code": "45",
+      "zh-abbreviation": "望",
+      "name": "望江地区",
+      "name-latin": "Wangjiang Territory",
+      "type": "territory",
+      "capital": "信阳镇 Xinyang",
+      "est": "2023",
+      "governor": "baka_mashiro",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "no",
+      "level": 1,
+      "model": "2024",
+      "region-code": "46",
+      "zh-abbreviation": "路",
+      "name": "北路地区",
+      "name-latin": "Norway Territory",
+      "type": "territory",
+      "capital": "奥斯陆市 Oslo",
+      "est": "2023",
+      "governor": "北岛府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "zh",
+      "level": 1,
+      "model": "2024",
+      "region-code": "47",
+      "zh-abbreviation": "中",
+      "name": "中州地区",
+      "name-latin": "Zhongzhou Territory",
+      "type": "territory",
+      "capital": "关原市 Sekigahara",
+      "est": "2023",
+      "governor": "松山府代管",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "sh",
+      "level": 1,
+      "model": "2024",
+      "region-code": "48",
+      "zh-abbreviation": "撒",
+      "name": "撒哈拉地区",
+      "name-latin": "Sahara Territory",
+      "type": "territory",
+      "capital": "撒哈拉中央镇 Sahara Central",
+      "est": "2021",
+      "governor": "unsavory",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "us",
+      "level": 1,
+      "model": "2024",
+      "region-code": "A02",
+      "zh-abbreviation": "屿",
+      "name": "屿山县（冻结）",
+      "name-latin": "Yushan Xian",
+      "type": "state",
+      "capital": "N/A",
+      "est": "2020",
+      "governor": "N/A",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "lw",
+      "level": 1,
+      "model": "2024",
+      "region-code": "A03",
+      "zh-abbreviation": "芜",
+      "name": "芜州县（冻结）",
+      "name-latin": "U-zhou Xian",
+      "type": "state",
+      "capital": "N/A",
+      "est": "2019",
+      "governor": "N/A",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "hz",
+      "level": 1,
+      "model": "2024",
+      "region-code": "A04",
+      "zh-abbreviation": "花",
+      "name": "海花洲县",
+      "name-latin": "Haihuazhou Xian",
+      "type": "state",
+      "capital": "政经中心区 Central",
+      "est": "2021",
+      "governor": "Delicious_OvO",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "lz",
+      "level": 1,
+      "model": "2024",
+      "region-code": "A05",
+      "zh-abbreviation": "凌",
+      "name": "凌中",
+      "name-latin": "Lingzhong",
+      "type": "state",
+      "capital": "凌中 Lingzhong",
+      "est": "2022",
+      "governor": "Delicious_OvO",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    },
+    {
+      "id": "bq",
+      "level": 1,
+      "model": "2024",
+      "region-code": "A06",
+      "zh-abbreviation": "群",
+      "name": "北群区",
+      "name-latin": "Beiqun Qu",
+      "type": "state",
+      "capital": "北群 Beiqun",
+      "est": "2022",
+      "governor": "yybs44",
+      "vice-governor": "N/A",
+      "last-updated": "2024-02-14"
+    }
+  ]
+}
