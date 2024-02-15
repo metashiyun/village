@@ -55,7 +55,7 @@ export const CityDetails = ({ city, models }) => (
     {[
       ["中文名", city.name],
       ["拉丁名", city["name-latin"]],
-      ["区号", city["city-code"]],
+      ["区号", city["id"]],
       [
         "类别",
         models[0].regions
