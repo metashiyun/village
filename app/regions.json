@@ -18,6 +18,10 @@
               "zh": "玩家村落"
             }
           ],
+          "govt": {
+            "en": "Office",
+            "zh": "代表处"
+          },
           "governor": {
             "en": "Governor",
             "zh": "代表人"
@@ -234,6 +238,7 @@
       "est": "2016",
       "governor": "scchan",
       "vice-governor": "Kawakazechan",
+      "address": "西溪区湖中路1号",
       "children": [
         {
           "id": "02-01",
@@ -521,15 +526,86 @@
       "est": "2018",
       "governor": "syx0310",
       "vice-governor": "lyq2002",
+      "address": "北村区府厅路1号",
       "children": [
         {
-          "id": "99-99",
+          "id": "03-01",
+          "level": 3,
+          "type": "city-metro",
+          "name": "北村区",
+          "name-latin": "Beicun City",
+          "county": "北村县",
+          "license": "北村",
+          "neighborhoods": "N/A"
+        },
+        {
+          "id": "03-02",
+          "level": 3,
+          "type": "city-metro",
+          "name": "婺外区",
+          "name-latin": "Wuwai City",
+          "county": "婺外县",
+          "license": "丽泽",
+          "neighborhoods": "N/A"
+        },
+        {
+          "id": "03-03",
+          "level": 3,
+          "type": "city-metro",
+          "name": "南村区",
+          "name-latin": "Nancun City",
+          "county": "婺外县",
+          "license": "丽泽",
+          "neighborhoods": "N/A"
+        },
+        {
+          "id": "03-04",
+          "level": 3,
+          "type": "city-metro",
+          "name": "丽泽区",
+          "name-latin": "Li-tse City",
+          "county": "婺外县",
+          "license": "丽泽",
+          "neighborhoods": "N/A"
+        },
+        {
+          "id": "03-05",
+          "level": 3,
+          "type": "city-metro",
+          "name": "西婺区",
+          "name-latin": "Xiwu City",
+          "county": "北村县",
+          "license": "北村",
+          "neighborhoods": "N/A"
+        },
+        {
+          "id": "03-06",
+          "level": 3,
+          "type": "city-metro",
+          "name": "东阳区",
+          "name-latin": "Dongyang City",
+          "county": "东阳县",
+          "license": "黄大仙",
+          "neighborhoods": "N/A"
+        },
+        {
+          "id": "03-07",
+          "level": 3,
+          "type": "city-metro",
+          "name": "黄大仙区",
+          "name-latin": "Wong Tai Sin City",
+          "county": "东阳县",
+          "license": "黄大仙",
+          "neighborhoods": "N/A"
+        },
+        {
+          "id": "03-51",
           "level": 3,
           "type": "city",
-          "name": "该一级区划的三级区划信息尚不完善",
-          "name-latin": "Third-level region data not available",
-          "county": "N/A",
-          "license": "N/A",
+          "name": "南外市",
+          "name-latin": "Nanwai City",
+          "county": "婺外县",
+          "license": "南外",
           "neighborhoods": "N/A"
         }
       ],
@@ -548,6 +624,7 @@
       "est": "2016",
       "governor": "syx0310",
       "vice-governor": "Kawakazechan",
+      "address": "湖滨市江北区北山路1号",
       "children": [
         {
           "id": "99-99",
@@ -575,6 +652,7 @@
       "est": "2015",
       "governor": "lyq2002",
       "vice-governor": "scchan",
+      "address": "西山区渡江路南段3号",
       "children": [
         {
           "id": "99-99",
@@ -602,6 +680,7 @@
       "est": "2015",
       "governor": "scchan",
       "vice-governor": "small___rice",
+      "address": "京都市下京区三条大道中段1号",
       "children": [
         {
           "id": "99-99",
@@ -629,6 +708,7 @@
       "est": "2017",
       "governor": "small___rice",
       "vice-governor": "scchan",
+      "address": "东逸仙市通海路1号",
       "children": [
         {
           "id": "99-99",
@@ -656,15 +736,56 @@
       "est": "2017",
       "governor": "syx0310",
       "vice-governor": "scchan",
+      "address": "海湾市定海区海运路北段1号",
       "children": [
         {
-          "id": "99-99",
+          "id": "22-01",
           "level": 3,
-          "type": "city",
-          "name": "该一级区划的三级区划信息尚不完善",
-          "name-latin": "Third-level region data not available",
-          "county": "N/A",
-          "license": "N/A",
+          "type": "city-special",
+          "name": "海湾市",
+          "name-latin": "The City of Haiwan",
+          "county": "海湾县",
+          "license": "海湾",
+          "neighborhoods": "定海区、镇海区、前海区"
+        },
+        {
+          "id": "22-02",
+          "level": 3,
+          "type": "city-special",
+          "name": "东岛市",
+          "name-latin": "The City of Dongdao",
+          "county": "东岛县",
+          "license": "东岛",
+          "neighborhoods": "紫荆港区、长岛区、玉山区、沙湾区、离岛区、清水湾区、东区"
+        },
+        {
+          "id": "22-51",
+          "level": 3,
+          "type": "town",
+          "name": "临海镇",
+          "name-latin": "Linhai Town",
+          "county": "临芳县",
+          "license": "东海",
+          "neighborhoods": "N/A"
+        },
+        {
+          "id": "22-81",
+          "level": 3,
+          "type": "village",
+          "name": "芳岛村",
+          "name-latin": "Fangdao Village",
+          "county": "临芳县",
+          "license": "东海",
+          "neighborhoods": "N/A"
+        },
+        {
+          "id": "22-82",
+          "level": 3,
+          "type": "village",
+          "name": "东极岛村",
+          "name-latin": "Dongjidao Village",
+          "county": "东岛县",
+          "license": "东海",
           "neighborhoods": "N/A"
         }
       ],
@@ -683,6 +804,7 @@
       "est": "2018",
       "governor": "scchan",
       "vice-governor": "N/A",
+      "address": "北斗市天海路2号",
       "children": [
         {
           "id": "99-99",
@@ -710,6 +832,7 @@
       "est": "2018",
       "governor": "syx0310",
       "vice-governor": "N/A",
+      "address": "新山市森林城市大厅1号",
       "children": [
         {
           "id": "99-99",
@@ -737,6 +860,7 @@
       "est": "2017",
       "governor": "scchan",
       "vice-governor": "N/A",
+      "address": "千代市小平区大学路3号",
       "children": [
         {
           "id": "99-99",
@@ -764,6 +888,7 @@
       "est": "2019",
       "governor": "东京府代管",
       "vice-governor": "N/A",
+      "address": "东京府西溪区湖中路1号",
       "children": [
         {
           "id": "99-99",
@@ -791,6 +916,7 @@
       "est": "2020",
       "governor": "京都府代管",
       "vice-governor": "N/A",
+      "address": "京都府京都市下京区三条大道中段1号",
       "children": [
         {
           "id": "99-99",
@@ -818,6 +944,7 @@
       "est": "2021",
       "governor": "scchan",
       "vice-governor": "xi_lao_zhai",
+      "address": "松山市南浦区雷威道中段1弄1号",
       "children": [
         {
           "id": "99-99",
@@ -845,6 +972,7 @@
       "est": "2021",
       "governor": "东京府代管",
       "vice-governor": "N/A",
+      "address": "东京府西溪区湖中路1号",
       "children": [
         {
           "id": "99-99",
@@ -872,6 +1000,7 @@
       "est": "2021",
       "governor": "scchan",
       "vice-governor": "Kawakazechan",
+      "address": "罗家汇市东侧",
       "children": [
         {
           "id": "99-99",
@@ -899,6 +1028,7 @@
       "est": "2021",
       "governor": "scchan",
       "vice-governor": "N/A",
+      "address": "坂井市站前路2号",
       "children": [
         {
           "id": "99-99",
@@ -926,6 +1056,7 @@
       "est": "2021",
       "governor": "Kawakazechan",
       "vice-governor": "N/A",
+      "address": "建德市三咏楼",
       "children": [
         {
           "id": "99-99",
@@ -953,6 +1084,7 @@
       "est": "2022",
       "governor": "AlccHoward",
       "vice-governor": "N/A",
+      "address": "N/A",
       "children": [
         {
           "id": "99-99",
@@ -980,6 +1112,7 @@
       "est": "2022",
       "governor": "东京府代管",
       "vice-governor": "N/A",
+      "address": "东京府西溪区湖中路1号",
       "children": [
         {
           "id": "99-99",
@@ -1007,6 +1140,7 @@
       "est": "2022",
       "governor": "东京府代管",
       "vice-governor": "N/A",
+      "address": "东京府西溪区湖中路1号",
       "children": [
         {
           "id": "99-99",
@@ -1034,6 +1168,7 @@
       "est": "2022",
       "governor": "千代府代管",
       "vice-governor": "N/A",
+      "address": "千代府千代市小平区大学路3号",
       "children": [
         {
           "id": "99-99",
@@ -1061,6 +1196,7 @@
       "est": "2022",
       "governor": "xi_lao_zhai",
       "vice-governor": "N/A",
+      "address": "南沙村金山大道",
       "children": [
         {
           "id": "99-99",
@@ -1088,6 +1224,7 @@
       "est": "2022",
       "governor": "baka_mashiro",
       "vice-governor": "N/A",
+      "address": "N/A",
       "children": [
         {
           "id": "99-99",
@@ -1115,6 +1252,7 @@
       "est": "2023",
       "governor": "东海府代管",
       "vice-governor": "N/A",
+      "address": "东海府海湾市定海区海运路北段1号",
       "children": [
         {
           "id": "99-99",
@@ -1142,6 +1280,7 @@
       "est": "2023",
       "governor": "全罗府代管",
       "vice-governor": "N/A",
+      "address": "全罗府罗家汇市东侧",
       "children": [
         {
           "id": "99-99",
@@ -1169,6 +1308,7 @@
       "est": "2023",
       "governor": "松山府代管",
       "vice-governor": "N/A",
+      "address": "松山府松山市南浦区雷威道中段1弄1号",
       "children": [
         {
           "id": "99-99",
@@ -1196,6 +1336,7 @@
       "est": "2023",
       "governor": "松山府代管",
       "vice-governor": "N/A",
+      "address": "松山府松山市南浦区雷威道中段1弄1号",
       "children": [
         {
           "id": "99-99",
@@ -1223,6 +1364,7 @@
       "est": "2023",
       "governor": "baka_mashiro",
       "vice-governor": "N/A",
+      "address": "信阳镇汽车工业园",
       "children": [
         {
           "id": "99-99",
@@ -1250,6 +1392,7 @@
       "est": "2023",
       "governor": "北岛府代管",
       "vice-governor": "N/A",
+      "address": "北岛府北斗市天海路2号",
       "children": [
         {
           "id": "99-99",
@@ -1277,6 +1420,7 @@
       "est": "2023",
       "governor": "松山府代管",
       "vice-governor": "N/A",
+      "address": "松山府松山市南浦区雷威道中段1弄1号",
       "children": [
         {
           "id": "99-99",
@@ -1304,6 +1448,7 @@
       "est": "2021",
       "governor": "unsavory",
       "vice-governor": "N/A",
+      "address": "撒哈拉中央镇沙漠中",
       "children": [
         {
           "id": "99-99",
@@ -1331,13 +1476,14 @@
       "est": "2020",
       "governor": "N/A",
       "vice-governor": "N/A",
+      "address": "N/A",
       "children": [
         {
-          "id": "99-99",
+          "id": "99-00",
           "level": 3,
           "type": "city",
-          "name": "该一级区划的三级区划信息尚不完善",
-          "name-latin": "Third-level region data not available",
+          "name": "该一级区划不适用公共规划区的四级区划架构",
+          "name-latin": "Not applicable",
           "county": "N/A",
           "license": "N/A",
           "neighborhoods": "N/A"
@@ -1358,13 +1504,14 @@
       "est": "2019",
       "governor": "N/A",
       "vice-governor": "N/A",
+      "address": "N/A",
       "children": [
         {
-          "id": "99-99",
+          "id": "99-00",
           "level": 3,
           "type": "city",
-          "name": "该一级区划的三级区划信息尚不完善",
-          "name-latin": "Third-level region data not available",
+          "name": "该一级区划不适用公共规划区的四级区划架构",
+          "name-latin": "Not applicable",
           "county": "N/A",
           "license": "N/A",
           "neighborhoods": "N/A"
@@ -1381,17 +1528,18 @@
       "name": "海花洲县",
       "name-latin": "Haihuazhou Xian",
       "type": "state",
-      "capital": "政经中心区 Central",
+      "capital": "金钟区 Admiralty",
       "est": "2021",
       "governor": "Delicious_OvO",
       "vice-governor": "N/A",
+      "address": "东京府金钟区世界贸易中心4号海花洲县代表处",
       "children": [
         {
-          "id": "99-99",
+          "id": "99-00",
           "level": 3,
           "type": "city",
-          "name": "该一级区划的三级区划信息尚不完善",
-          "name-latin": "Third-level region data not available",
+          "name": "该一级区划不适用公共规划区的四级区划架构",
+          "name-latin": "Not applicable",
           "county": "N/A",
           "license": "N/A",
           "neighborhoods": "N/A"
@@ -1408,17 +1556,18 @@
       "name": "凌中",
       "name-latin": "Lingzhong",
       "type": "state",
-      "capital": "凌中 Lingzhong",
+      "capital": "金钟区 Admiralty",
       "est": "2022",
       "governor": "Delicious_OvO",
       "vice-governor": "N/A",
+      "address": "东京府金钟区世界贸易中心4号凌中代表处",
       "children": [
         {
-          "id": "99-99",
+          "id": "99-00",
           "level": 3,
           "type": "city",
-          "name": "该一级区划的三级区划信息尚不完善",
-          "name-latin": "Third-level region data not available",
+          "name": "该一级区划不适用公共规划区的四级区划架构",
+          "name-latin": "Not applicable",
           "county": "N/A",
           "license": "N/A",
           "neighborhoods": "N/A"
@@ -1435,17 +1584,18 @@
       "name": "北群区",
       "name-latin": "Beiqun Qu",
       "type": "state",
-      "capital": "北群 Beiqun",
+      "capital": "建德市 Jiande",
       "est": "2022",
       "governor": "yybs44",
       "vice-governor": "N/A",
+      "address": "严州府建德市梅铁大厦北群区代表处",
       "children": [
         {
-          "id": "99-99",
+          "id": "99-00",
           "level": 3,
           "type": "city",
-          "name": "该一级区划的三级区划信息尚不完善",
-          "name-latin": "Third-level region data not available",
+          "name": "该一级区划不适用公共规划区的四级区划架构",
+          "name-latin": "Not applicable",
           "county": "N/A",
           "license": "N/A",
           "neighborhoods": "N/A"
