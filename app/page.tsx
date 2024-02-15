@@ -4,7 +4,7 @@ import Lookup from "@/app/lookup";
 export default async function Home() {
     const db = await fs.readFile(process.cwd() + '/app/regions.json', 'utf8')
     const data = JSON.parse(db)
-
+    
     return (
         <main className="bg-gray-100 dark:bg-gray-800 min-h-screen flex flex-col">
             <header className="text-center p-5 bg-white dark:bg-gray-900 dark:text-white">
