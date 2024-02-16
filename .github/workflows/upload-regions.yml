@@ -3,7 +3,7 @@ name: Upload Regions JSON to R2 on Production Push
 on:
   push:
     branches:
-      - production
+      - main
 
 jobs:
   upload:
