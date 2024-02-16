@@ -1,9 +1,8 @@
-import {promises as fs} from "fs";
 import {NextRequest} from "next/server";
+import {getData} from "@/app/utils/data";
 
 export async function GET(request: NextRequest) {
-    const db = await fs.readFile(process.cwd() + '/app/regions.json', 'utf8')
-    const data = JSON.parse(db)
+    const data = await getData()
     const regions = data.regions
 
     const { searchParams } = new URL(request.url)
