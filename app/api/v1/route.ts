@@ -1,8 +1,7 @@
-import {promises as fs} from "fs";
+import {getData} from "@/app/utils/data";
 
 export async function GET() {
-    const db = await fs.readFile(process.cwd() + '/app/regions.json', 'utf8')
-    const data = JSON.parse(db)
+    const data = await getData()
 
     return Response.json(data)
 }
