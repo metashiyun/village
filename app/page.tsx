@@ -1,5 +1,5 @@
 import {promises as fs} from 'fs'
-import Lookup from "@/app/lookup";
+import Lookup from "@/app/components/lookup";
 
 export default async function Home() {
     const db = await fs.readFile(process.cwd() + '/app/regions.json', 'utf8')
