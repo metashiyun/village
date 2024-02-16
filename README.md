@@ -22,6 +22,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   - or with filter `type` (`pref`, etc.)
 - `/api/v1/region/[id]` - the region with specific `id` (e.g. `jd`)
 
+## Editing Data
+
+Data is stored in external storage, and should be automatically uploaded with each push to `main` branch. To edit data, edit `/app/regions.json`.
+
 ## Links
 
 - [Next.js Documentation](https://nextjs.org/docs)
