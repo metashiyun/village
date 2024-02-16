@@ -1,0 +1,30 @@
+name: Upload Regions JSON to R2 on Production Push
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Upload JSON to R2
+        env:
+          S3_ACCESS_KEY: ${{ variables.SHIYUN_CF_R2_ACCESS_KEY_ID }}
+          S3_SECRET_KEY: ${{ secrets.SHIYUN_CF_R2_SECRET_ACCESS_KEY }}
+          S3_BUCKET: ${{ variables.SHIYUN_CF_R2_BUCKET }}
+          S3_ENDPOINT: ${{ variables.SHIYUN_CF_R2_ENDPOINT }}
+        run: node upload-regions.js
