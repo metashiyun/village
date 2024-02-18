@@ -1,7 +1,7 @@
 {
   "name": "Shiyun Works Regions Database",
   "name-zh": "红石云工场区划数据库",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "models": [
     {
       "id": "2024",
@@ -637,8 +637,119 @@
       "est": "2015",
       "governor": "scchan",
       "vice-governor": "small___rice",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "12-01",
+          "level": 3,
+          "type": "city-special",
+          "name": "京都市",
+          "name-latin": "The City of Jingdu",
+          "county": "临安县",
+          "license": "临安、明伦",
+          "neighborhoods": "上京区、下京区、左京区、右京区、江东区、明伦区"
+        },
+        {
+          "id": "12-02",
+          "level": 3,
+          "type": "city-special",
+          "name": "西江市",
+          "name-latin": "The City of Seiko",
+          "county": "西江县",
+          "license": "西江",
+          "neighborhoods": "中央区、港北区、松山区、西湖区"
+        },
+        {
+          "id": "12-03",
+          "level": 3,
+          "type": "city",
+          "name": "山阳市",
+          "name-latin": "Shanyang City",
+          "county": "临安县",
+          "license": "明伦"
+        },
+        {
+          "id": "12-04",
+          "level": 3,
+          "type": "city",
+          "name": "镜湖市",
+          "name-latin": "Jinghu City",
+          "county": "西江县",
+          "license": "明镜"
+        },
+        {
+          "id": "12-21",
+          "level": 3,
+          "type": "town",
+          "name": "明月湖镇",
+          "name-latin": "Mingyuehu Town",
+          "county": "西江县",
+          "license": "明镜"
+        },
+        {
+          "id": "12-23",
+          "level": 3,
+          "type": "village",
+          "name": "阳明山村",
+          "name-latin": "Yangmingshan Village",
+          "county": "西江县",
+          "license": "明镜"
+        },
+        {
+          "id": "12-31",
+          "level": 3,
+          "type": "town",
+          "name": "京城山镇",
+          "name-latin": "Jingchengshan Town",
+          "county": "山城县",
+          "license": "山城"
+        },
+        {
+          "id": "12-32",
+          "level": 3,
+          "type": "town",
+          "name": "山城镇",
+          "name-latin": "Shancheng Town",
+          "county": "山城县",
+          "license": "山城"
+        },
+        {
+          "id": "12-33",
+          "level": 3,
+          "type": "village",
+          "name": "山南村",
+          "name-latin": "Shannan Village",
+          "county": "山城县",
+          "license": "山城"
+        },
+        {
+          "id": "12-41",
+          "level": 3,
+          "type": "town",
+          "name": "小泉镇",
+          "name-latin": "Xiaoquan Town",
+          "county": "南山县",
+          "license": "小泉"
+        },
+        {
+          "id": "12-42",
+          "level": 3,
+          "type": "town",
+          "name": "后泉村",
+          "name-latin": "Houquan Village",
+          "county": "南山县",
+          "license": "小泉"
+        },
+        {
+          "id": "12-51",
+          "level": 3,
+          "type": "town",
+          "name": "南山镇",
+          "name-latin": "Nanshan Town",
+          "county": "南山县",
+          "license": "小泉"
+        }
+      ],
+      "last-updated": "2024-02-17"
     },
     {
       "id": "ys",
@@ -677,7 +788,7 @@
           "name": "海湾市",
           "name-latin": "The City of Haiwan",
           "county": "海湾县",
-          "license": "海湾",
+          "license": "海湾、镇海",
           "neighborhoods": "定海区、镇海区、前海区"
         },
         {
@@ -687,7 +798,7 @@
           "name": "东岛市",
           "name-latin": "The City of Dongdao",
           "county": "东岛县",
-          "license": "东岛",
+          "license": "东海、紫荆港、清水湾",
           "neighborhoods": "紫荆港区、长岛区、玉山区、沙湾区、离岛区、清水湾区、东区"
         },
         {
@@ -697,7 +808,7 @@
           "name": "临海镇",
           "name-latin": "Linhai Town",
           "county": "临芳县",
-          "license": "东海"
+          "license": "临芳"
         },
         {
           "id": "22-81",
@@ -706,7 +817,7 @@
           "name": "芳岛村",
           "name-latin": "Fangdao Village",
           "county": "临芳县",
-          "license": "东海"
+          "license": "临芳"
         },
         {
           "id": "22-82",
@@ -718,7 +829,7 @@
           "license": "东海"
         }
       ],
-      "last-updated": "2024-02-14"
+      "last-updated": "2024-02-17"
     },
     {
       "id": "kr",
@@ -732,8 +843,27 @@
       "capital": "北斗市 Beidou",
       "est": "2018",
       "governor": "scchan",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "23-01",
+          "level": 3,
+          "type": "city",
+          "name": "北斗市",
+          "name-latin": "Beidou City",
+          "county": "北斗县",
+          "license": "北岛"
+        },
+        {
+          "id": "23-51",
+          "level": 3,
+          "type": "village",
+          "name": "北海村",
+          "name-latin": "Beihai Village",
+          "county": "北斗县",
+          "license": "北岛"
+        }
+      ],
+      "last-updated": "2024-02-17"
     },
     {
       "id": "fo",
@@ -747,8 +877,27 @@
       "capital": "新山市 Niiyama",
       "est": "2018",
       "governor": "syx0310",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "26-01",
+          "level": 3,
+          "type": "city",
+          "name": "新山市",
+          "name-latin": "Niiyama City",
+          "county": "佛州县",
+          "license": "新山"
+        },
+        {
+          "id": "26-51",
+          "level": 3,
+          "type": "village",
+          "name": "新山村",
+          "name-latin": "Niiyama Village",
+          "county": "佛州县",
+          "license": "新山"
+        }
+      ],
+      "last-updated": "2024-02-17"
     },
     {
       "id": "se",
@@ -762,8 +911,45 @@
       "capital": "千代市 Sendai",
       "est": "2017",
       "governor": "scchan",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "27-01",
+          "level": 3,
+          "type": "city-special",
+          "name": "千代市",
+          "name-latin": "The City of Sendai",
+          "county": "千代县",
+          "license": "泉林、千代"
+        },
+        {
+          "id": "27-02",
+          "level": 3,
+          "type": "city",
+          "name": "湖州市",
+          "name-latin": "Huzhou City",
+          "county": "湖州县",
+          "license": "千代"
+        },
+        {
+          "id": "27-51",
+          "level": 3,
+          "type": "village",
+          "name": "千代村",
+          "name-latin": "Sendai Village",
+          "county": "千代县",
+          "license": "千代"
+        },
+        {
+          "id": "27-52",
+          "level": 3,
+          "type": "village",
+          "name": "湖州村",
+          "name-latin": "Huzhou Village",
+          "county": "湖州县",
+          "license": "千代"
+        }
+      ],
+      "last-updated": "2024-02-17"
     },
     {
       "id": "pj",
@@ -808,8 +994,111 @@
       "est": "2021",
       "governor": "scchan",
       "vice-governor": "xi_lao_zhai",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "30-01",
+          "level": 3,
+          "type": "city-special",
+          "name": "松山市",
+          "name-latin": "The City of Songshan",
+          "county": "松山县",
+          "license": "松山",
+          "neighborhoods": "南浦区、大学区、竹西区、和平区、雷威区"
+        },
+        {
+          "id": "30-02",
+          "level": 3,
+          "type": "city",
+          "name": "平安市",
+          "name-latin": "The City of Ping'an",
+          "county": "平安县",
+          "license": "平安",
+          "neighborhoods": "平州区、延平区、西雷威区"
+        },
+        {
+          "id": "30-03",
+          "level": 3,
+          "type": "city",
+          "name": "雷东市",
+          "name-latin": "The City of Leidong",
+          "county": "雷东县",
+          "license": "松山",
+          "neighborhoods": "雷州区、中雷威区"
+        },
+        {
+          "id": "30-31",
+          "level": 3,
+          "type": "town",
+          "name": "竹北镇",
+          "name-latin": "Zhubei Town",
+          "county": "湖北县",
+          "license": "松山"
+        },
+        {
+          "id": "30-32",
+          "level": 3,
+          "type": "town",
+          "name": "北松湖镇",
+          "name-latin": "Beisonghu Town",
+          "county": "湖北县",
+          "license": "松山"
+        },
+        {
+          "id": "30-33",
+          "level": 3,
+          "type": "town",
+          "name": "京大镇",
+          "name-latin": "University Town",
+          "county": "湖北县",
+          "license": "松山"
+        },
+        {
+          "id": "30-51",
+          "level": 3,
+          "type": "village",
+          "name": "越南村",
+          "name-latin": "Viet Nam Village",
+          "county": "湖北县",
+          "license": "松山"
+        },
+        {
+          "id": "30-52",
+          "level": 3,
+          "type": "village",
+          "name": "雷威山村",
+          "name-latin": "Mount Lake Way Village",
+          "county": "平安县",
+          "license": "平安"
+        },
+        {
+          "id": "30-53",
+          "level": 3,
+          "type": "village",
+          "name": "北雷威村",
+          "name-latin": "North Lake Way Village",
+          "county": "雷东县",
+          "license": "平安"
+        },
+        {
+          "id": "30-54",
+          "level": 3,
+          "type": "village",
+          "name": "利维尔村",
+          "name-latin": "Revell Village",
+          "county": "利维尔县",
+          "license": "海上"
+        },
+        {
+          "id": "30-55",
+          "level": 3,
+          "type": "village",
+          "name": "中途岛村",
+          "name-latin": "Midway Island Village",
+          "county": "利维尔县",
+          "license": "海上"
+        }
+      ],
+      "last-updated": "2024-02-17"
     },
     {
       "id": "rk",

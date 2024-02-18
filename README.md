@@ -21,6 +21,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `/api/v1/region` - all regions
   - or with filter `type` (`pref`, etc.)
 - `/api/v1/region/[id]` - the region with specific `id` (e.g. `jd`)
+- `/api/v1/city` - all third level regions
+  - or with filter `type` (e.g. `city`), `pref` (e.g. `sz`)
+- `/api/v1/city/[id]` - the third level region with specific `id` (e.g. `02-01`)
 
 ## Editing Data
 
