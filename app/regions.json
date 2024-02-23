@@ -854,7 +854,7 @@
           "id": "20-01",
           "level": 3,
           "type": "city-special",
-          "name": "中山市",
+          "name": "逸仙市",
           "name-latin": "Sun Yat-sen City",
           "county": "香山县",
           "license": "逸仙"
@@ -878,7 +878,7 @@
           "license": "逸仙"
         },
         {
-          "id": "20-03",
+          "id": "20-04",
           "level": 3,
           "type": "city",
           "name": "翠亨市",
@@ -887,7 +887,7 @@
           "license": "逸仙"
         },
         {
-          "id": "20-04",
+          "id": "20-05",
           "level": 3,
           "type": "city-special",
           "name": "东逸仙市",
