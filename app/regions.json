@@ -523,7 +523,7 @@
           "type": "city-metro",
           "name": "北村区",
           "name-latin": "Beicun City",
-          "county": "北村县",
+          "county": "长山县",
           "license": "北村"
         },
         {
@@ -532,7 +532,7 @@
           "type": "city-metro",
           "name": "婺外区",
           "name-latin": "Wuwai City",
-          "county": "婺外县",
+          "county": "丽泽县",
           "license": "丽泽"
         },
         {
@@ -541,7 +541,7 @@
           "type": "city-metro",
           "name": "南村区",
           "name-latin": "Nancun City",
-          "county": "婺外县",
+          "county": "丽泽县",
           "license": "丽泽"
         },
         {
@@ -550,7 +550,7 @@
           "type": "city-metro",
           "name": "丽泽区",
           "name-latin": "Li-tse City",
-          "county": "婺外县",
+          "county": "丽泽县",
           "license": "丽泽"
         },
         {
@@ -559,7 +559,7 @@
           "type": "city-metro",
           "name": "西婺区",
           "name-latin": "Xiwu City",
-          "county": "北村县",
+          "county": "长山县",
           "license": "北村"
         },
         {
@@ -586,11 +586,11 @@
           "type": "city",
           "name": "南外市",
           "name-latin": "Nanwai City",
-          "county": "婺外县",
+          "county": "丽泽县",
           "license": "南外"
         }
       ],
-      "last-updated": "2024-02-14"
+      "last-updated": "2024-02-23"
     },
     {
       "id": "hb",
@@ -605,8 +605,65 @@
       "est": "2016",
       "governor": "syx0310",
       "vice-governor": "Kawakazechan",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "10-01",
+          "level": 3,
+          "type": "city-special",
+          "name": "湖滨市",
+          "name-latin": "The City of Hubin",
+          "county": "双城县",
+          "license": "湖滨",
+          "neighborhoods": "南岸区、江北区、东西湖区、河滨区"
+        },
+        {
+          "id": "10-02",
+          "level": 3,
+          "type": "city-special",
+          "name": "东林市",
+          "name-latin": "The City of Donglin",
+          "county": "双城县",
+          "license": "湖滨",
+          "neighborhoods": "中央区、北区、黑森林区"
+        },
+        {
+          "id": "10-03",
+          "level": 3,
+          "type": "city-special",
+          "name": "滨西市",
+          "name-latin": "West Hubin City",
+          "county": "滨西县",
+          "license": "滨西"
+        },
+        {
+          "id": "10-04",
+          "level": 3,
+          "type": "city",
+          "name": "湖墅市",
+          "name-latin": "Hushu City",
+          "county": "独逸县",
+          "license": "湖墅"
+        },
+        {
+          "id": "10-31",
+          "level": 3,
+          "type": "town",
+          "name": "北山镇",
+          "name-latin": "Beishan Town",
+          "county": "北山县",
+          "license": "北山"
+        },
+        {
+          "id": "10-51",
+          "level": 3,
+          "type": "village",
+          "name": "北山村",
+          "name-latin": "Beishan Village",
+          "county": "北山县",
+          "license": "北山"
+        }
+      ],
+      "last-updated": "2024-02-23"
     },
     {
       "id": "tc",
@@ -621,8 +678,36 @@
       "est": "2015",
       "governor": "lyq2002",
       "vice-governor": "scchan",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "11-01",
+          "level": 3,
+          "type": "city-metro",
+          "name": "西山区",
+          "name-latin": "Xishan City",
+          "county": "西山县",
+          "license": "塔城"
+        },
+        {
+          "id": "11-02",
+          "level": 3,
+          "type": "city-metro",
+          "name": "塔城区",
+          "name-latin": "Tacheng City",
+          "county": "塔城县",
+          "license": "塔城"
+        },
+        {
+          "id": "11-03",
+          "level": 3,
+          "type": "city-metro",
+          "name": "运河区",
+          "name-latin": "Yunhe City",
+          "county": "运河县",
+          "license": "塔城"
+        }
+      ],
+      "last-updated": "2024-02-23"
     },
     {
       "id": "jd",
@@ -654,7 +739,7 @@
           "type": "city-special",
           "name": "西江市",
           "name-latin": "The City of Seiko",
-          "county": "西江县",
+          "county": "明镜县",
           "license": "西江",
           "neighborhoods": "中央区、港北区、松山区、西湖区"
         },
@@ -673,7 +758,7 @@
           "type": "city",
           "name": "镜湖市",
           "name-latin": "Jinghu City",
-          "county": "西江县",
+          "county": "明镜县",
           "license": "明镜"
         },
         {
@@ -682,7 +767,7 @@
           "type": "town",
           "name": "明月湖镇",
           "name-latin": "Mingyuehu Town",
-          "county": "西江县",
+          "county": "明镜县",
           "license": "明镜"
         },
         {
@@ -691,17 +776,17 @@
           "type": "village",
           "name": "阳明山村",
           "name-latin": "Yangmingshan Village",
-          "county": "西江县",
+          "county": "明镜县",
           "license": "明镜"
         },
         {
           "id": "12-31",
           "level": 3,
           "type": "town",
-          "name": "京城山镇",
-          "name-latin": "Jingchengshan Town",
-          "county": "山城县",
-          "license": "山城"
+          "name": "天目镇",
+          "name-latin": "Tianmu Town",
+          "county": "天目县",
+          "license": "天目"
         },
         {
           "id": "12-32",
@@ -709,8 +794,8 @@
           "type": "town",
           "name": "山城镇",
           "name-latin": "Shancheng Town",
-          "county": "山城县",
-          "license": "山城"
+          "county": "天目县",
+          "license": "天目"
         },
         {
           "id": "12-33",
@@ -718,8 +803,8 @@
           "type": "village",
           "name": "山南村",
           "name-latin": "Shannan Village",
-          "county": "山城县",
-          "license": "山城"
+          "county": "天目县",
+          "license": "天目"
         },
         {
           "id": "12-41",
@@ -749,7 +834,7 @@
           "license": "小泉"
         }
       ],
-      "last-updated": "2024-02-17"
+      "last-updated": "2024-02-23"
     },
     {
       "id": "ys",
@@ -764,8 +849,54 @@
       "est": "2017",
       "governor": "small___rice",
       "vice-governor": "scchan",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "20-01",
+          "level": 3,
+          "type": "city-special",
+          "name": "中山市",
+          "name-latin": "Sun Yat-sen City",
+          "county": "香山县",
+          "license": "逸仙"
+        },
+        {
+          "id": "20-02",
+          "level": 3,
+          "type": "city",
+          "name": "民乐市",
+          "name-latin": "Minle City",
+          "county": "香山县",
+          "license": "逸仙"
+        },
+        {
+          "id": "20-03",
+          "level": 3,
+          "type": "city",
+          "name": "山口市",
+          "name-latin": "Shankou City",
+          "county": "香山县",
+          "license": "逸仙"
+        },
+        {
+          "id": "20-03",
+          "level": 3,
+          "type": "city",
+          "name": "翠亨市",
+          "name-latin": "Cuiheng City",
+          "county": "翠亨县",
+          "license": "逸仙"
+        },
+        {
+          "id": "20-04",
+          "level": 3,
+          "type": "city-special",
+          "name": "东逸仙市",
+          "name-latin": "Tung Yat-sen City",
+          "county": "翠亨县",
+          "license": "东逸仙"
+        }
+      ],
+      "last-updated": "2024-02-23"
     },
     {
       "id": "tk",
