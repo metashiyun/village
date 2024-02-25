@@ -726,28 +726,26 @@
         {
           "id": "12-01",
           "level": 3,
-          "type": "city-special",
-          "name": "京都市",
-          "name-latin": "The City of Jingdu",
+          "type": "city-metro",
+          "name": "京都区",
+          "name-latin": "Jingdu City",
           "county": "临安县",
-          "license": "临安、明伦",
-          "neighborhoods": "上京区、下京区、左京区、右京区、江东区、明伦区"
+          "license": "京都"
         },
         {
           "id": "12-02",
           "level": 3,
-          "type": "city-special",
-          "name": "西江市",
-          "name-latin": "The City of Seiko",
+          "type": "city-metro",
+          "name": "西江区",
+          "name-latin": "Xijiang City",
           "county": "明镜县",
-          "license": "西江",
-          "neighborhoods": "中央区、港北区、松山区、西湖区"
+          "license": "西江"
         },
         {
           "id": "12-03",
           "level": 3,
-          "type": "city",
-          "name": "山阳市",
+          "type": "city-metro",
+          "name": "山阳区",
           "name-latin": "Shanyang City",
           "county": "临安县",
           "license": "明伦"
@@ -755,11 +753,20 @@
         {
           "id": "12-04",
           "level": 3,
-          "type": "city",
-          "name": "镜湖市",
+          "type": "city-metro",
+          "name": "镜湖区",
           "name-latin": "Jinghu City",
           "county": "明镜县",
           "license": "明镜"
+        },
+        {
+          "id": "12-05",
+          "level": 3,
+          "type": "city-metro",
+          "name": "明伦区",
+          "name-latin": "Minglun City",
+          "county": "临安县",
+          "license": "明伦"
         },
         {
           "id": "12-21",
@@ -767,15 +774,6 @@
           "type": "town",
           "name": "明月湖镇",
           "name-latin": "Mingyuehu Town",
-          "county": "明镜县",
-          "license": "明镜"
-        },
-        {
-          "id": "12-23",
-          "level": 3,
-          "type": "village",
-          "name": "阳明山村",
-          "name-latin": "Yangmingshan Village",
           "county": "明镜县",
           "license": "明镜"
         },
@@ -834,7 +832,7 @@
           "license": "小泉"
         }
       ],
-      "last-updated": "2024-02-23"
+      "last-updated": "2024-02-24"
     },
     {
       "id": "ys",
