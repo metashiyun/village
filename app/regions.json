@@ -1,12 +1,12 @@
 {
   "name": "Shiyun Works Regions Database",
   "name-zh": "红石云工场区划数据库",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "models": [
     {
       "id": "2024",
       "name": "Shiyun Works Region Model 2024",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "regions": [
         {
           "id": "state",
@@ -147,7 +147,7 @@
           "level": 3,
           "names": [
             {
-              "en": "Town",
+              "en": "Township",
               "zh": "镇"
             }
           ],
@@ -171,8 +171,8 @@
             }
           ],
           "govt": {
-            "en": "Hall",
-            "zh": "公所"
+            "en": "Council",
+            "zh": "委员会"
           },
           "governor": {
             "en": "Head",
@@ -190,12 +190,12 @@
             }
           ],
           "govt": {
-            "en": "Council",
+            "en": "Board",
             "zh": "委员会"
           },
           "governor": {
-            "en": "Director",
-            "zh": "主任"
+            "en": "Chair",
+            "zh": "委员长"
           }
         },
         {
