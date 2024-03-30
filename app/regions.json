@@ -1,7 +1,7 @@
 {
   "name": "Shiyun Works Regions Database",
   "name-zh": "红石云工场区划数据库",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "models": [
     {
       "id": "2024",
@@ -816,7 +816,7 @@
         {
           "id": "12-42",
           "level": 3,
-          "type": "town",
+          "type": "village",
           "name": "后泉村",
           "name-latin": "Houquan Village",
           "county": "南山县",
@@ -832,7 +832,7 @@
           "license": "小泉"
         }
       ],
-      "last-updated": "2024-02-24"
+      "last-updated": "2024-03-30"
     },
     {
       "id": "ys",
@@ -1392,8 +1392,71 @@
       "capital": "悉尼市 Sydney",
       "est": "2023",
       "governor": "东海府代管",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "41-01",
+          "level": 3,
+          "type": "city",
+          "name": "珀斯市",
+          "name-latin": "The City of Perth",
+          "county": "西澳县",
+          "license": "西澳"
+        },
+        {
+          "id": "41-02",
+          "level": 3,
+          "type": "city-special",
+          "name": "悉尼市",
+          "name-latin": "The City of Sydney",
+          "county": "新南威尔士县",
+          "license": "新南",
+          "neighborhoods": "加拿大湾区、莲花井区、角山区"
+        },
+        {
+          "id": "41-03",
+          "level": 3,
+          "type": "city",
+          "name": "卧龙岗市",
+          "name-latin": "The City of Wollongong",
+          "county": "新南威尔士县",
+          "license": "新南"
+        },
+        {
+          "id": "41-04",
+          "level": 3,
+          "type": "city",
+          "name": "布里斯班市",
+          "name-latin": "The City of Brisbane",
+          "county": "昆士兰县",
+          "license": "昆士兰"
+        },
+        {
+          "id": "41-05",
+          "level": 3,
+          "type": "city",
+          "name": "阿德莱德市",
+          "name-latin": "The City of Adelaide",
+          "county": "南澳县",
+          "license": "南澳"
+        },
+        {
+          "id": "41-51",
+          "level": 3,
+          "type": "town",
+          "name": "井上镇",
+          "name-latin": "Inoue Town",
+          "county": "新南威尔士县",
+          "license": "新南"
+        },
+        {
+          "id": "41-99",
+          "level": 3,
+          "type": "village",
+          "name": "全澳未探明区域联合村",
+          "name-latin": "Australia Village"
+        }
+      ],
+      "last-updated": "2024-03-30"
     },
     {
       "id": "nv",
