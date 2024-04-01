@@ -1,17 +1,12 @@
 'use client'
 
 import React, {useState} from "react";
+import InfoCard from "@/app/components/card/info-card";
+import InteractionCard from "@/app/components/card/interaction-card";
+import TableRow from "@/app/components/card/table-row";
 
-const TableRow = ({title, content}) => <div
-    className={`
-     px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 
-     odd:bg-gray-100 dark:odd:bg-gray-800
-     even:bg-white dark:even:bg-gray-900
-     `}
->
-    <dt className="text-sm font-medium">{title}</dt>
-    <dd className="mt-1 text-sm sm:mt-0 sm:col-span-2">{content}</dd>
-</div>
+const getModel = (models, id) =>
+    models.find(m => m.id === id)
 
 const RegionDetails = ({region, models}) => <div>
     {[
@@ -21,7 +16,7 @@ const RegionDetails = ({region, models}) => <div>
         ["简称", `${region["zh-abbreviation"]} / ${region.id.toUpperCase()}`],
         [
             "类别",
-            models[0].regions
+            getModel(models, region.model).regions
                 .find((r) => r.id === region.type)
                 .names.map(
                 (name: { zh: string; en: string }) => `${name.zh} (${name.en})`
@@ -35,11 +30,11 @@ const RegionDetails = ({region, models}) => <div>
         ["建立年份", region.est],
         ["传送点域名", `${region.id}.`],
         [
-            models[0].regions.find((r) => r.id === region.type).governor.zh,
+            getModel(models, region.model).regions.find((r) => r.id === region.type).governor.zh,
             region.governor,
         ],
         [
-            `副${models[0].regions.find((r) => r.id === region.type).governor.zh}`,
+            `副${getModel(models, region.model).regions.find((r) => r.id === region.type).governor.zh}`,
             region["vice-governor"],
         ],
         ["信息更新于", new Date(region["last-updated"]).toLocaleDateString()],
@@ -51,14 +46,14 @@ const RegionDetails = ({region, models}) => <div>
         ))}
 </div>
 
-const CityDetails = ({city, models}) => <div>
+const CityDetails = ({city, model}) => <div>
     {[
         ["中文名", city.name],
         ["拉丁名", city["name-latin"]],
         ["区号", city.id],
         [
             "类别",
-            models[0].regions
+            model.regions
                 .find((r) => r.id === city.type)
                 .names.map((name) => `${name.zh} (${name.en})`)
                 .join(" / "),
@@ -81,57 +76,33 @@ const Lookup = ({data}) => {
 
     const Region = (props: { regionId: string }) => {
         const region = regions.find((r) => r.id === props.regionId)
-        return <div className="mt-4 p-4 bg-white dark:bg-gray-900 max-w-4xl mx-auto sm:rounded-lg">
-            <div className="px-4 py-5 sm:px-6">
-                <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">
-                    {region.name} {region["name-latin"]}
-                </h3>
-                <p className="mt-1 max-w-2xl text-sm text-gray-500 dark:text-gray-300">
-                    详细信息
-                </p>
-            </div>
-            <div className="dark:text-white">
-                <dl>
-                    <RegionDetails region={region} models={models}/>
-                </dl>
-            </div>
-        </div>
+        return <InfoCard title={`${region.name} ${region["name-latin"]}`} subtitle={"详细信息"}>
+            <dl>
+                <RegionDetails region={region} models={models}/>
+            </dl>
+        </InfoCard>
     }
 
     const LookupCity = (props: { regionId: string }) => {
-        const cities = regions.find((r) => r.id === props.regionId).children;
+        const region = regions.find((r) => r.id === props.regionId)
+        const cities = region.children;
         const firstCity = cities[0] || {id: ""}
 
         const [cityId, setCityId] = useState<string>(firstCity.id)
 
         const City = (props) => {
             const city = cities.find(c => c.id === props.cityId)
-            return <div className="mt-4 p-4 bg-white dark:bg-gray-900 max-w-4xl mx-auto sm:rounded-lg">
-                <div className="px-4 py-5 sm:px-6">
-                    <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">
-                        {city.name} {city["name-latin"]}
-                    </h3>
-                    <p className="mt-1 max-w-2xl text-sm text-gray-500 dark:text-gray-300">
-                        详细信息
-                    </p>
-                </div>
-                <div className="dark:text-white">
-                    <dl>
-                        <CityDetails city={city} models={models}/>
-                    </dl>
-                </div>
-            </div>
+            return <InfoCard title={`${city.name} ${city["name-latin"]}`} subtitle={"详细信息"}>
+                <dl>
+                    <CityDetails city={city} model={getModel(models, region.model)}/>
+                </dl>
+            </InfoCard>
         }
 
         return cities.length > 0 ?
             <div>
-                <div className="mt-4 p-4 bg-white dark:bg-gray-900 max-w-4xl mx-auto sm:rounded-lg">
-                    <h4 className="text-2xl text-center mb-2 dark:text-white">
-                        查询次级区划信息
-                    </h4>
-                    <p className="my-2 text-center text-sm text-gray-500 dark:text-gray-300">
-                        二级区划包含县（郡），三级区划包含特别区、特别市和市，四级区划包含街区、区、里和邻。
-                    </p>
+                <InteractionCard title={"查询次级区划信息"}
+                                 subtitle={"二级区划包含县（郡），三级区划包含特别区、特别市和市，四级区划包含街区、区、里和邻。"}>
                     <select
                         className="form-select block w-full mb-1 rounded-md p-2 border dark:bg-gray-800 dark:text-white dark:border-0"
                         value={cityId}
@@ -143,31 +114,19 @@ const Lookup = ({data}) => {
                             </option>
                         ))}
                     </select>
-                </div>
+                </InteractionCard>
 
                 <City cityId={cityId}/>
             </div>
             :
             <div>
-                <div className="mt-4 p-4 bg-white dark:bg-gray-900 max-w-4xl mx-auto sm:rounded-lg">
-                    <h4 className="text-2xl text-center mb-2 dark:text-white">
-                        细分区划信息暂缺
-                    </h4>
-                    <p className="my-2 text-center text-sm text-gray-500 dark:text-gray-300">
-                        该区划的细分区划信息暂缺，或该区划不适用四级区划框架。
-                    </p>
-                </div>
+                <InteractionCard title={"细分区划信息暂缺"}
+                                 subtitle={"该区划的细分区划信息暂缺，或该区划不适用四级区划框架。"}/>
             </div>
     }
 
-    return <div className="pb-4 flex-grow">
-        <div className="mt-4 p-4 bg-white dark:bg-gray-900 max-w-4xl mx-auto sm:rounded-lg">
-            <h4 className="text-2xl text-center mb-2 dark:text-white">
-                查询一级区划信息
-            </h4>
-            <p className="my-2 text-center text-sm text-gray-500 dark:text-gray-300">
-                一级区划包含府、地区和玩家村落。
-            </p>
+    return <div>
+        <InteractionCard title={"查询一级区划信息"} subtitle={"一级区划包含府、地区和玩家村落。"}>
             <select
                 className="form-select block w-full mb-1 rounded-md p-2 border dark:bg-gray-800 dark:text-white dark:border-0"
                 value={regionId}
@@ -179,10 +138,9 @@ const Lookup = ({data}) => {
                     </option>
                 ))}
             </select>
-        </div>
+        </InteractionCard>
 
         <Region regionId={regionId}/>
-
         <LookupCity regionId={regionId}/>
     </div>
 }

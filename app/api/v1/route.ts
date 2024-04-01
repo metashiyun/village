@@ -1,4 +1,4 @@
-import {getData} from "@/app/utils/data";
+import {getData} from "@/app/data";
 
 export async function GET() {
     const data = await getData()

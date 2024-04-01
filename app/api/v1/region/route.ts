@@ -1,5 +1,5 @@
 import {NextRequest} from "next/server";
-import {getData} from "@/app/utils/data";
+import {getData} from "@/app/data";
 
 export async function GET(request: NextRequest) {
     const data = await getData()
