@@ -1,12 +1,12 @@
 {
   "name": "Shiyun Works Regions Database",
   "name-zh": "红石云工场区划数据库",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "models": [
     {
       "id": "2024",
-      "name": "Shiyun Works Region Model 2024",
-      "version": "1.1.0",
+      "name": "红石云工场区划架构 2024",
+      "version": "1.1.1",
       "regions": [
         {
           "id": "state",

@@ -22,7 +22,7 @@ const Navbar = () => {
             const isActive = pathname === href
 
             return <div key={href}
-                       className={`${isActive ? "bg-gray-100" : "bg-transparent"} text-lg px-2 py-1 rounded hover:bg-gray-100 transition`}>
+                       className={`${isActive ? "bg-gray-100 dark:bg-gray-700" : "bg-transparent"} text-lg px-2 py-1 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white transition`}>
                 <Link href={href}>
                     {label}
                 </Link>

@@ -75,7 +75,13 @@ const LookupModel = ({data}) => {
             </select>
         </InteractionCard>
 
-        <InfoCard title={getModel(models, modelId).name} subtitle={"详细信息"}>
+        <InfoCard title={
+            `${
+                Array.from(new Set(getModel(models, modelId).regions.find((r) => r.id === regionId).names.map((name) => name.zh))).join(" / ")
+            } ${
+                Array.from(new Set(getModel(models, modelId).regions.find((r) => r.id === regionId).names.map((name) => name.en))).join(" / ")
+            }`
+        } subtitle={"详细信息"}>
             <RegionDetails regionId={regionId} />
         </InfoCard>
     </div>
