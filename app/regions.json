@@ -1,7 +1,7 @@
 {
   "name": "Shiyun Works Regions Database",
   "name-zh": "红石云工场区划数据库",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "models": [
     {
       "id": "2024",
@@ -1500,8 +1500,38 @@
       "capital": "天门市 Tianmen",
       "est": "2023",
       "governor": "松山府代管",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "44-01",
+          "level": 3,
+          "type": "city",
+          "name": "天门市",
+          "name-latin": "The City of Tianmen",
+          "neighborhoods": "港区、长波区、东区、西区"
+        },
+        {
+          "id": "44-31",
+          "level": 3,
+          "type": "town",
+          "name": "大空镇",
+          "name-latin": "Dakong Town"
+        },
+        {
+          "id": "44-51",
+          "level": 3,
+          "type": "village",
+          "name": "鄂霍次克村",
+          "name-latin": "Okhotskoye Village"
+        },
+        {
+          "id": "44-52",
+          "level": 3,
+          "type": "village",
+          "name": "天门村",
+          "name-latin": "Tianmen Village"
+        }
+      ],
+      "last-updated": "2024-04-01"
     },
     {
       "id": "wn",
@@ -1515,8 +1545,23 @@
       "capital": "信阳镇 Xinyang",
       "est": "2023",
       "governor": "baka_mashiro",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "45-01",
+          "level": 3,
+          "type": "town",
+          "name": "信阳镇",
+          "name-latin": "Xinyang Town"
+        },
+        {
+          "id": "45-02",
+          "level": 3,
+          "type": "village",
+          "name": "毛尖村",
+          "name-latin": "Maojian Village"
+        }
+      ],
+      "last-updated": "2024-04-01"
     },
     {
       "id": "no",
@@ -1564,36 +1609,66 @@
       "last-updated": "2024-02-14"
     },
     {
+      "id": "cc",
+      "level": 1,
+      "model": "2024",
+      "region-code": "49",
+      "zh-abbreviation": "清",
+      "name": "忠清地区",
+      "name-latin": "Chungcheong Territory",
+      "type": "territory",
+      "capital": "清水镇 Qingshui",
+      "est": "2024",
+      "governor": "松山府代管",
+      "children": [
+        {
+          "id": "49-01",
+          "level": 3,
+          "type": "town",
+          "name": "清水镇",
+          "name-latin": "Qingshui Town"
+        },
+        {
+          "id": "49-99",
+          "level": 3,
+          "type": "town",
+          "name": "清原广域村",
+          "name-latin": "Qingyuan Village"
+        }
+      ],
+      "last-updated": "2024-04-01"
+    },
+    {
       "id": "us",
       "level": 1,
       "model": "2024",
-      "region-code": "A02",
+      "region-code": "A2",
       "zh-abbreviation": "屿",
       "name": "屿山县（冻结）",
       "name-latin": "Yushan Xian",
       "type": "state",
       "est": "2020",
       "children": [],
-      "last-updated": "2024-02-14"
+      "last-updated": "2024-04-10"
     },
     {
       "id": "lw",
       "level": 1,
       "model": "2024",
-      "region-code": "A03",
+      "region-code": "A3",
       "zh-abbreviation": "芜",
       "name": "芜州县（冻结）",
       "name-latin": "U-zhou Xian",
       "type": "state",
       "est": "2019",
       "children": [],
-      "last-updated": "2024-02-14"
+      "last-updated": "2024-04-10"
     },
     {
       "id": "hz",
       "level": 1,
       "model": "2024",
-      "region-code": "A04",
+      "region-code": "A4",
       "zh-abbreviation": "花",
       "name": "海花洲县",
       "name-latin": "Haihuazhou Xian",
@@ -1602,13 +1677,13 @@
       "est": "2021",
       "governor": "Delicious_OvO",
       "children": [],
-      "last-updated": "2024-02-14"
+      "last-updated": "2024-04-10"
     },
     {
       "id": "lz",
       "level": 1,
       "model": "2024",
-      "region-code": "A05",
+      "region-code": "A5",
       "zh-abbreviation": "凌",
       "name": "凌中",
       "name-latin": "Lingzhong",
@@ -1617,13 +1692,13 @@
       "est": "2022",
       "governor": "Delicious_OvO",
       "children": [],
-      "last-updated": "2024-02-14"
+      "last-updated": "2024-04-10"
     },
     {
       "id": "bq",
       "level": 1,
       "model": "2024",
-      "region-code": "A06",
+      "region-code": "A6",
       "zh-abbreviation": "群",
       "name": "北群区",
       "name-latin": "Beiqun Qu",
@@ -1632,7 +1707,7 @@
       "est": "2022",
       "governor": "yybs44",
       "children": [],
-      "last-updated": "2024-02-14"
+      "last-updated": "2024-04-10"
     }
   ]
 }
