@@ -354,10 +354,10 @@
           "level": 3,
           "type": "city-metro",
           "name": "西溪区",
-          "name-latin": "Seikei City",
+          "name-latin": "Xixi City",
           "county": "西溪县",
           "license": "西溪",
-          "neighborhoods": "北宁、南宁、湖中、西溪路"
+          "neighborhoods": "北宁、湖中、湖西"
         },
         {
           "id": "02-16",
@@ -377,7 +377,7 @@
           "name-latin": "Haiguang City",
           "county": "海光县",
           "license": "海光",
-          "neighborhoods": "钱江路、婺江路、永田、世界之窗、和平、会展、临港"
+          "neighborhoods": "钱江路、婺江路、世界之窗"
         },
         {
           "id": "02-18",
@@ -387,7 +387,7 @@
           "name-latin": "Jinjiang City",
           "county": "海光县",
           "license": "海光",
-          "neighborhoods": "近江、临平"
+          "neighborhoods": "南宁、近江、临平"
         },
         {
           "id": "02-19",
@@ -397,17 +397,17 @@
           "name-latin": "Yuanjiang City",
           "county": "海光县",
           "license": "海光",
-          "neighborhoods": "远江、音大"
+          "neighborhoods": "远江、清水峡"
         },
         {
           "id": "02-20",
           "level": 3,
           "type": "city-metro",
-          "name": "港区",
-          "name-latin": "Port City",
+          "name": "湾岸区",
+          "name-latin": "Wangan City",
           "county": "海光县",
           "license": "海光",
-          "neighborhoods": "海港、青田"
+          "neighborhoods": "青海、青岛、东海、东方"
         },
         {
           "id": "02-50",
@@ -422,8 +422,8 @@
           "id": "02-51",
           "level": 3,
           "type": "city",
-          "name": "天河市",
-          "name-latin": "Tianhe City",
+          "name": "天河临平市",
+          "name-latin": "Tianhe-Linping City",
           "county": "海光县",
           "license": "海光"
         },
@@ -454,15 +454,6 @@
           "name-latin": "Xinshan Town",
           "county": "吴山县",
           "license": "南山"
-        },
-        {
-          "id": "02-61",
-          "level": 3,
-          "type": "town",
-          "name": "东方镇",
-          "name-latin": "Dongfang Town",
-          "county": "海光县",
-          "license": "海光"
         },
         {
           "id": "02-70",
@@ -501,7 +492,7 @@
           "license": "西溪"
         }
       ],
-      "last-updated": "2024-02-14"
+      "last-updated": "2024-09-17"
     },
     {
       "id": "wz",
@@ -928,7 +919,7 @@
           "name-latin": "The City of Dongdao",
           "county": "东岛县",
           "license": "东海、紫荆港、清水湾",
-          "neighborhoods": "紫荆港区、长岛区、玉山区、沙湾区、离岛区、清水湾区、东区"
+          "neighborhoods": "紫荆港区、长岛区、玉山区、沙湾区、离岛区、清水湾区、水上区"
         },
         {
           "id": "22-51",
@@ -940,6 +931,15 @@
           "license": "临芳"
         },
         {
+          "id": "22-52",
+          "level": 3,
+          "type": "town",
+          "name": "东极岛镇",
+          "name-latin": "Dongjidao Town",
+          "county": "东岛县",
+          "license": "东海"
+        },
+        {
           "id": "22-81",
           "level": 3,
           "type": "village",
@@ -949,16 +949,16 @@
           "license": "临芳"
         },
         {
-          "id": "22-82",
+          "id": "22-83",
           "level": 3,
           "type": "village",
-          "name": "东极岛村",
-          "name-latin": "Dongjidao Village",
-          "county": "东岛县",
-          "license": "东海"
+          "name": "沙田村",
+          "name-latin": "Shatian Village",
+          "county": "临芳县",
+          "license": "临芳"
         }
       ],
-      "last-updated": "2024-02-17"
+      "last-updated": "2024-09-17"
     },
     {
       "id": "kr",
@@ -1047,8 +1047,9 @@
           "type": "city-special",
           "name": "千代市",
           "name-latin": "The City of Sendai",
-          "county": "千代县",
-          "license": "泉林、千代"
+          "county": "小平县",
+          "license": "小平、望美",
+          "neighborhoods": "小平区、望美区、泉林区、青叶区、千原区、太白区"
         },
         {
           "id": "27-02",
@@ -1060,12 +1061,21 @@
           "license": "千代"
         },
         {
+          "id": "27-03",
+          "level": 3,
+          "type": "city",
+          "name": "北角市",
+          "name-latin": "The City of North Point",
+          "county": "北角县",
+          "license": "千代"
+        },
+        {
           "id": "27-51",
           "level": 3,
           "type": "village",
           "name": "千代村",
           "name-latin": "Sendai Village",
-          "county": "千代县",
+          "county": "小平县",
           "license": "千代"
         },
         {
@@ -1078,7 +1088,7 @@
           "license": "千代"
         }
       ],
-      "last-updated": "2024-02-17"
+      "last-updated": "2024-09-17"
     },
     {
       "id": "pj",
@@ -1347,8 +1357,37 @@
       "capital": "岩岛市 Yandao",
       "est": "2022",
       "governor": "千代府代管",
-      "children": [],
-      "last-updated": "2024-02-14"
+      "children": [
+        {
+          "id": "38-01",
+          "level": 3,
+          "type": "city",
+          "name": "岩岛市",
+          "name-latin": "The City of Yandao",
+          "county": "岩岛县",
+          "license": "岩岛"
+        },
+        {
+          "id": "38-02",
+          "level": 3,
+          "type": "city",
+          "name": "黄岛市",
+          "name-latin": "The City of Huangdao",
+          "county": "黄岛县",
+          "license": "黄岛",
+          "neighborhoods": "西海岸新区、大门区、东区、北区、西区"
+        },
+        {
+          "id": "38-51",
+          "level": 3,
+          "type": "village",
+          "name": "黄岩村",
+          "name-latin": "Huangyan Village",
+          "county": "黄岛县",
+          "license": "黄岛"
+        }
+      ],
+      "last-updated": "2024-09-17"
     },
     {
       "id": "ns",
@@ -1449,6 +1488,15 @@
           "license": "新南"
         },
         {
+          "id": "41-52",
+          "level": 3,
+          "type": "town",
+          "name": "昆士兰空港镇",
+          "name-latin": "Queensland Airport Town",
+          "county": "昆士兰县",
+          "license": "昆士兰"
+        },
+        {
           "id": "41-99",
           "level": 3,
           "type": "village",
@@ -1456,7 +1504,7 @@
           "name-latin": "Australia Village"
         }
       ],
-      "last-updated": "2024-03-30"
+      "last-updated": "2024-09-17"
     },
     {
       "id": "nv",
