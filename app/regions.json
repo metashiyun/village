@@ -234,7 +234,7 @@
       "name": "东京府",
       "name-latin": "Dongjing Metropolis",
       "type": "pref",
-      "capital": "西溪区 Seikei",
+      "capital": "西溪区 Xixi",
       "est": "2016",
       "governor": "scchan",
       "vice-governor": "Kawakazechan",
@@ -492,7 +492,7 @@
           "license": "西溪"
         }
       ],
-      "last-updated": "2024-09-17"
+      "last-updated": "2024-11-03"
     },
     {
       "id": "wz",
@@ -1685,6 +1685,50 @@
         }
       ],
       "last-updated": "2024-04-01"
+    },
+    {
+      "id": "po",
+      "level": 1,
+      "model": "2024",
+      "region-code": "50",
+      "zh-abbreviation": "玻",
+      "name": "波利尼西亚地区",
+      "name-latin": "Polynesia Territory",
+      "type": "territory",
+      "capital": "帕皮提市 Papeete",
+      "est": "2024",
+      "governor": "松山府代管",
+      "children": [
+        {
+          "id": "50-01",
+          "level": 3,
+          "type": "city",
+          "name": "帕皮提市",
+          "name-latin": "The City of Papeete"
+        },
+        {
+          "id": "50-50",
+          "level": 3,
+          "type": "town",
+          "name": "桜ヶ丘镇",
+          "name-latin": "Sakuragaoka Town"
+        },
+        {
+          "id": "50-51",
+          "level": 3,
+          "type": "village",
+          "name": "大溪地村",
+          "name-latin": "Tahiti Village"
+        },
+        {
+          "id": "50-52",
+          "level": 3,
+          "type": "village",
+          "name": "大平原村",
+          "name-latin": "The Great Plains Village"
+        }
+      ],
+      "last-updated": "2024-11-03"
     },
     {
       "id": "us",
